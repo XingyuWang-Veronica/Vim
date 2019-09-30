@@ -1,25 +1,3 @@
-" define plugins                                                                                                                     
-"call plug#begin()                                                                                                                    
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }                                                                        
-"Plug 'christoomey/vim-tmux-navigator'                                                                                                
-"Plug 'ekalinin/Dockerfile.vim'                                                                                                       
-"Plug 'fatih/vim-go'                                                                                                                  
-"Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}                                                                      
-"Plug 'junegunn/fzf.vim'                                                                                                              
-"Plug 'majutsushi/tagbar'                                                                                                             
-"Plug 'morhetz/gruvbox'                                                                                                               
-"Plug 'scrooloose/nerdcommenter'                                                                                                      
-"Plug 'scrooloose/nerdtree'                                                                                                           
-"Plug 'skywind3000/asyncrun.vim'                                                                                                      
-"Plug 'tpope/vim-fugitive'                                                                                                            
-"Plug 'tpope/vim-surround'                                                                                                            
-"Plug 'vim-airline/vim-airline'                                                                                                       
-"Plug 'w0rp/ale'                                                                                                                      
-"Plug 'zchee/deoplete-clang'                                                                                                          
-"Plug 'zchee/deoplete-jedi'                                                                                                           
-"Plug 'tpope/vim-commentary'                                                                                                          
-"call plug#end() 
-
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
@@ -54,6 +32,9 @@ syntax on
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
+
+" Color Scheme
+Plug ''morhetz/gruvbox'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
@@ -268,7 +249,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " nmap <unique> <C-Space>e :scs find e <C-R>=expand("<cword>")<CR><CR>                                                                 
 " nmap <unique> <C-Space>f :scs find f <C-R>=expand("<cfile>")<CR><CR>                                                                 
 " nmap <unique> <C-Space>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>                                                               
-"nmap <unique> <C-Space>d :scs find d <C-R>=expand("<cword>")<CR><CR>                                                                 
+" nmap <unique> <C-Space>d :scs find d <C-R>=expand("<cword>")<CR><CR>                                                                 
 " nmap <unique> <C-Space><C-Space>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>                                                   
 " nmap <unique> <C-Space><C-Space>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>                                                   
 " nmap <unique> <C-Space><C-Space>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>                                                   
